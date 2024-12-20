@@ -19,33 +19,34 @@ The benchmark model achieves the highest average performance score, yet fails to
 
 **Data Description**: We used both synthetic job listings and candidate information to perform our fair candidate selection. The Job Dataset contains specific hypothetical job opening(s) with relevant descriptors that the company is seeking in a particular candidate (Rana, 2023b). The features for the job dataset are discussed here: 
 
-• Min Exp: Minimum years of experience required for the job
-• Max Exp: Maximum years of experience allowed for the job
-• QualificationMapped: The education level for the job in standardized categories
-• Min Salary: The minimum salary offered for the job
-• Max Salary: The maximum salary offered for the job
-• WorkMapped: The type of work status, such as full-time, contract, part-time
-• PythonCode: Whether Python proficiency is required for the job
-• JavaScriptCode: Whether JavaScript proficiency is required for the job
-• SocialMediaSkill: Whether social media management is expected for the role
-• CADSoftwareSkill: Whether expertise in CAD (Computer-Aided Design) software is necessary for the job
-• NetworkDesignSkill: Whether skills in network design are needed for the job
+- **Min Exp**: Minimum years of experience required for the job
+- **Max Exp**: Maximum years of experience allowed for the job
+- **QualificationMapped**: The education level for the job in standardized categories
+- **Min Salary**: The minimum salary offered for the job
+- **Max Salary**: The maximum salary offered for the job
+- **WorkMapped**: The type of work status, such as full-time, contract, part-time
+- **PythonCode**: Whether Python proficiency is required for the job
+- **JavaScriptCode**: Whether JavaScript proficiency is required for the job
+- **SocialMediaSkill**: Whether social media management is expected for the role
+- **CADSoftwareSkill**: Whether expertise in CAD (Computer-Aided Design) software is necessary for the job
+- **NetworkDesignSkill**: Whether skills in network design are needed for the job
 
 The Employee Dataset contains 3000 employee records and provides key features about the candidates’ current role and level of expertise (Rana, 2023a). Both datasets are synthetic but they are meant to mirror real-world candidate and job details. The final employee dataset used includes these features: 
-• YearsWorked: Number of years the candidate has worked
-• TitleMapped: Mapped job title, standardized for various roles
-• EducationMapped: The standardized education level of the candidate
-• EmployeeTypeMapped: Employment type, such as full-time, part-time, or contract
-• Age: Age of the candidate to analyze trends related to demographics
-• GenderMapped: The gender of the candidate, mapped into categories for diversity analysis
-• RaceMapped: The standardized race of the candidate
-• PerformanceScoreMapped: The candidate’s performance score, mapped to categories
-such as exceeds expectations, meets expectations, or needs improvement
-• PythonCode: Inferred skill level in Python programming
-• JavaScriptCode: Inferred skill level in JavaScript programming
-• SocialMediaSkill: The candidate’s proficiency in social media management
-• NetworkDesign: Inferred expertise in designing and managing computer networks
-• CADSoftwareSkill: Proficiency in using CAD (Computer-Aided Design) software
+
+- **YearsWorked**: Number of years the candidate has worked
+- **TitleMapped**: Mapped job title, standardized for various roles
+- **EducationMapped**: The standardized education level of the candidate
+- **EmployeeTypeMapped**: Employment type, such as full-time, part-time, or contract
+- **Age**: Age of the candidate to analyze trends related to demographics
+- **GenderMapped**: The gender of the candidate, mapped into categories for diversity analysis
+- **RaceMapped**: The standardized race of the candidate
+- **PerformanceScoreMapped**: The candidate’s performance score, mapped to categories such as exceeds expectations, meets expectations, or needs improvement
+- **PythonCode**: Inferred skill level in Python programming
+- **JavaScriptCode**: Inferred skill level in JavaScript programming
+- **SocialMediaSkill**: The candidate’s proficiency in social media management
+- **NetworkDesign**: Inferred expertise in designing and managing computer networks
+- **CADSoftwareSkill**: Proficiency in using CAD (Computer-Aided Design) software
+
 The PerformanceScoreMapped column is mapped to random integers within specific ranges based on the category values: Exceeds (70-100), Fully Meets (50-70), Needs Improvement (20-50), and PIP (0-20). The PIP category indicates the employee is likely to be fired unless he or she significantly improves performance.
 
 **Key Results**: We develop a fairness metric and optimization formulation to assess the trade-off between performance and fairness. These are discussed in greater detail in the attached project report. First, we adjust the weight associated with the gender constraint, which represents the minimum proportion of male candidates the model is enforced to select. Then, we plot the relationship between the performance score and fairness for the different gender weights, where each datapoint is for a particular gender weight:
