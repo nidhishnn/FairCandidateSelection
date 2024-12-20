@@ -11,7 +11,7 @@ The baseline best performance model simply selects the top 50 candidates by thei
 
 <img width="625" alt="Screenshot 2024-12-20 at 4 09 30 PM" src="https://github.com/user-attachments/assets/522e9f29-d929-49fd-a69a-daac5c9660a7" />
 
-There is a clear gender divide, with 37 women and 13 men selected. In addition, white individuals represent the majority, followed by blacks, and ther appear to be discrepancies between the racial groups. The overall dataset has roughly even proportions of gender and racial groups, so we can directly inspect differences in raw counts. To further our results, we look at the intersectionality between race and gender:
+There is a clear gender divide, with 37 women and 13 men selected. In addition, white individuals represent the majority, followed by blacks, and there are discrepancies between the racial groups. The overall dataset has roughly even proportions of gender and racial groups, so we can directly inspect differences in raw counts. To further our results, we look at the intersectionality between race and gender:
 
 <img width="550" alt="Screenshot 2024-12-20 at 4 11 52 PM" src="https://github.com/user-attachments/assets/ba2af920-7a26-4636-89ed-a09beee697a5" />
 
@@ -31,7 +31,7 @@ The benchmark model achieves the highest average performance score, yet fails to
 - **CADSoftwareSkill**: Whether expertise in CAD (Computer-Aided Design) software is necessary for the job
 - **NetworkDesignSkill**: Whether skills in network design are needed for the job
 
-The Employee Dataset contains 3000 employee records and provides key features about the candidates’ current role and level of expertise (Rana, 2023a). Both datasets are synthetic but they are meant to mirror real-world candidate and job details. The final employee dataset used includes these features: 
+The Employee Dataset contains 3000 employee records and provides key features about the candidates’ current role and level of expertise (Rana, 2023a). Both datasets are synthetic but they are meant to mirror real-world candidate and job details. The final employee dataset includes these features: 
 
 - **YearsWorked**: Number of years the candidate has worked
 - **TitleMapped**: Mapped job title, standardized for various roles
