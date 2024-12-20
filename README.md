@@ -7,6 +7,8 @@ Optimization Methods Final Project (MIT 15.C57)
 **Introduction**: Our project aims to address the challenge of hiring candidates with high performance potential while ensuring diversity. Specifically, we perform subset selection to identify 50 candidates for a hypothetical job opening. Companies struggle to select the most qualified candidates who satisfy job description requirements such as experience level and technical skills while balancing equitable representation. The objective of our subset selection is to maximize the performance potential of the selected group and ensure representation across gender, race, age, and other factors.
 
 The baseline best performance model simply selects the top 50 candidates by their performance score and we show the relevant distributions of gender (0: Female, 1: Male) and race (0: Asian, 1: Black, 2: White, 3: Other, 4: Hispanic), where gender is colored pink for female and blue for male:
+
+
 <img width="625" alt="Screenshot 2024-12-20 at 4 09 30 PM" src="https://github.com/user-attachments/assets/522e9f29-d929-49fd-a69a-daac5c9660a7" />
 
 There is a clear gender divide, with 37 women and 13 men selected. In addition, white individuals represent the majority, followed by blacks, and ther appear to be discrepancies between the racial groups. The overall dataset has roughly even proportions of gender and racial groups, so we can directly inspect differences in raw counts. To further our results, we look at the intersectionality between race and gender:
